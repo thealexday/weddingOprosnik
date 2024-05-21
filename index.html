@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма заполнения сайта</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Amatic+SC:wght@400;700&family=Bad+Script&family=Caveat:wght@400..700&family=Lato&family=Poiret+One&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Amatic+SC:wght@400;700&family=Bad+Script&family=Caveat:wght@400..700&family=Lato&family=Poiret+One&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <section>
+        <div class="wrapper">
+            <div class="container">
+                <h1 class="form__title">Форма для заполнения контента для Вашего сайта*</h1>
+                <h3 class="form__subtitle form__subtitle_weight">*отправить фотографии для сайта нужно будет отдельно в
+                    телеграмм</h3>
+                <form class="form" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="cd172bbc-44de-4033-bbf4-198fa8d2c491">
+                    <section class="header">
+                        <h1 class="form__title">Шапка сайта</h1>
+                        <p class="form__description"> Имя жениха</p>
+                        <input class="form__input-text" type="text" name="имя жениха" required placeholder="Имя жениха">
+                        <p class="form__description">Имя невесты</p>
+                        <input class="form__input-text" type="text" name="имя невесты" required
+                            placeholder="Имя невесты">
+                        <p class="form__description">Дата торжества</p>
+                        <input class="form__input-text" type="text" name="дата свадьбы" required
+                            placeholder="напишите дату вашей свадьбы">
+                        <div class="img-box">
+                            <h3 class="form__subtitle">Пример шапки сайта</h3>
+                            <img class="img" src="img/шапка.jpg" alt="здесь фото пример шапки сайта">
+                        </div>
+                    </section>
+                    <h1 class="form__title">Блоки сайта</h1>
+                    <!-- блок дорогие друзья -->
+                    <section class="friends">
+
+                        <h3 class="form__subtitle">Блок "Дорогие друзья"</h3>
+                        <p class="form__description">Отметьте ниже нужен ли вам данный блок на сайте</p>
+                        <label class="form__description">
+                            <input class="form__redio friends_block_needed" value="нужен" name="блок друзья" id="нужен"
+                                type="radio">
+                            Нужен
+                        </label>
+                        <label class="form__description">
+                            <input class="form__redio friends_block_not_needed" value="не нужен" name="блок друзья"
+                                id="не нужен" type="radio">
+                            Не нужен
+                        </label>
+                        <div class="form__friends-block">
+                            <h3 class="form__subtitle">Что будем писать в заголовке данного блока?</h3>
+                            <p class="form__description form__description_curcive">Например (дорогие друзья/ гости и
+                                т.д)</p>
+                            <input class="form__input-text" type="text" name="Заголовок 'Дорогие друзья':"
+                                placeholder="Напишите сюда заголовок">
+                            <h3 class="form__subtitle">Что будем писать под заголовком данного блока?</h3>
+                            <p class=" form__description form__description_curcive">Например: "Совсем
+                                скоро в нашей
+                                жизни произойдет очень важное и трогательное событие, радость которого мы хотим
+                                разделить с
+                                Вами!"</p>
+                            <textarea class="form__textarea" name="Описание заголовка дорогие друзья" cols="30"
+                                rows="10"
+                                placeholder="здесь пишем текст, который должен быть под заголовком"></textarea>
+                        </div>
+
+                        <div class="img-box">
+                            <h3 class="form__subtitle">Пример блока 'Дорогие друзья'</h3>
+                            <img class="img" src="img/друзья.jpg" alt="здесь фото пример шапки сайта">
+                        </div>
+                    </section>
+                    <!-- Блок Тайминг дня -->
+                    <section class="timing">
+                        <h3 class="form__subtitle">Блок "Тайминг дня"</h3>
+                        <p class="form__description">Отметьте ниже нужен ли вам данный блок на сайте</p>
+                        <label class="form__description">
+                            <input class="form__redio timing_block_needed" name="блок тайминг" value="нужен" id="нужен"
+                                type="radio">
+                            нужен
+                        </label>
+                        <label class="form__description">
+                            <input class="form__redio timing_block_not_needed" name="блок тайминг" value="не нужен"
+                                id="не нужен" type="radio">
+                            не нужен
+                        </label>
+                        <!-- Опросник блока тайминга дня -->
+                        <div class="form__timing-block">
+                            <h3 class="form__subtitle">Что будем писать в заголовке данного блока? </h3>
+                            <p class="form__description form__description_curcive">например (тайминг дня / расписание
+                                дня)</p>
+                            <input class="form__input-text" type="text" name="Заголовок блока тайминг дня:"
+                                placeholder="Напишите сюда заголовок">
+                            <h3 class="form__subtitle">Что будем писать под заголовком данного блока?</h3>
+                            <p class="form__description form__description_curcive">Ниже напишите, что будет под
+                                заголовком (обязетельно пишем время и событие)</p>
+                            <p class="form__description form__description_curcive">Например:</p>
+                            <ul>
+                                <li class="form__description form__description_curcive">14-00: Сбор гостей</li>
+                                <li class="form__description form__description_curcive">15-00: Выездная регистрация</li>
+                                <li class="form__description form__description_curcive">17-00: Начало банкета</li>
+                            </ul>
+                            <textarea class="form__textarea" name="Описание заголовка тайминг дня" cols="30" rows="10"
+                                placeholder="здесь прописываем тайминг Вашего дня"></textarea>
+                        </div>
+                        <div class="img-box">
+                            <h3 class="form__subtitle">Пример блока 'Тайминг дня'</h3>
+                            <img class="img" src="img/тайминг.jpg" alt="здесь фото пример шапки сайта">
+                        </div>
+                    </section>
+                    <!-- Блок с фото -->
+                    <section class="photo">
+                        <h3 class="form__subtitle">Блок c фотографией</h3>
+                        <p class="form__description">Блок с фото это просто промежуточный блок, который не несет в себе
+                            никакой информативности, а вставляется из эстетических соображений и общего дизайна</p>
+                        <p class="form__description">Отметьте ниже нужен ли вам данный блок на сайте</p>
+                        <label class="form__description">
+                            <input class="form__redio photo_block_needed" name="блок с фото" value="нужен" id="нужен"
+                                type="radio">
+                            нужен
+                        </label>
+                        <label class="form__description">
+                            <input class="form__redio photo_block_not_needed" name="блок с фото" value="не нужен"
+                                id="не нужен" type="radio">
+                            не нужен
+                        </label>
+                        <!-- Опросник блока с фото -->
+                        <div class="form__photo-block">
+                            <h3 class="form__subtitle">Какую надпись сделать возле фото*</h3>
+                            <p class="form__description form__description_red">*Надпись не обязательна, если Вы не
+                                желаете подписывать фото,
+                                то ниже в поле ввода напишите "Надпись не нужна"</p>
+                            <input class="form__input-text" type="text" name="надпись к блоку с фото"
+                                placeholder="Напишите сюда надпись к фото">
+                        </div>
+                        <div class="img-box">
+                            <h3 class="form__subtitle">Пример блока с фото</h3>
+                            <img class="img" src="img/фото-блок.jpg" alt="здесь фото пример шапки сайта">
+                        </div>
+                    </section>
+                    <!-- Блок Локация -->
+                    <section class="location">
+                        <h3 class="form__subtitle">Блок "Местоположение"</h3>
+                        <p class="form__description">Отметьте ниже нужен ли вам данный блок на сайте</p>
+                        <label class="form__description">
+                            <input class="form__redio location_block_needed" name="Блок местоположение" value="нужен"
+                                id="нужен" type="radio">
+                            нужен
+                        </label>
+                        <label class="form__description">
+                            <input class="form__redio location_block_not_needed" name="Блок местоположение"
+                                value="не нужен" id="не нужен" type="radio">
+                            не нужен
+                        </label>
+                        <!-- Опросник блока локации -->
+                        <div class="form__location-block">
+                            <h3 class="form__subtitle">Что будем писать в заголовке данного блока? </h3>
+                            <p class="form__description form__description_curcive">Например
+                                (местоположение/ локация и т.д)</p>
+                            <input class="form__input-text" type="text" name="Заголовок блока местоположение"
+                                placeholder="Напишите сюда заголовок">
+                            <h3 class="form__subtitle">Что будем писать под заголовком данного блока?</h3>
+                            <p class="form__description form__description_curcive">Например: "Ждем вас по
+                                адресу: г.Бердск, ул. Зеленая Роща, 2а
+                                Ресторан Времена Года (шатер) и т.д"</p>
+                            <textarea class="form__textarea" name="Описание заголовка местоположение" cols="30"
+                                rows="10"
+                                placeholder="здесь пишем текст, который должен быть под заголовком"></textarea>
+                        </div>
+                        <div class="img-box">
+                            <h3 class="form__subtitle">Пример блока 'Местоположение'</h3>
+                            <img class="img" src="img/местоположение.jpg" alt="здесь фото пример шапки сайта">
+                        </div>
+                    </section>
+                    <!-- Блок дресс-код -->
+                    <section class="dress-code">
+                        <h3 class="form__subtitle">Блок "Дресс-код"</h3>
+                        <p class="form__description">Отметьте ниже нужен ли вам данный блок на сайте</p>
+                        <label class="form__description">
+                            <input class="form__redio dress-code_block_needed" name="Блок дресс-код" value="нужен"
+                                id="нужен" type="radio">
+                            нужен
+                        </label>
+                        <label class="form__description">
+                            <input class="form__redio dress-code_block_not_needed" name="Блок дресс-код"
+                                value="не нужен" id="не нужен" type="radio">
+                            не нужен
+                        </label>
+                        <!-- Опросник блока дресс код -->
+                        <div class="form__dress-code-block">
+                            <h3 class="form__subtitle">Что будем писать в заголовке данного блока? </h3>
+                            <p class="form__description form__description_curcive">Например (дресс-код/
+                                стиль и т.д)</p>
+                            <input class="form__input-text" type="text" name="Заголовок блока дресс-код"
+                                placeholder="Напишите сюда заголовок">
+                            <h3 class="form__subtitle">Что будем писать под заголовком данного блока?</h3>
+                            <p class="form__description form__description_curcive">Например: "Мы будем
+                                рады, если при подборе нарядов, Вы отдадите предпочтения следующим цветам ваших вечерних
+                                нарядов"</p>
+                            <textarea class="form__textarea" name="Описание заголовка дресс-код" cols="30" rows="10"
+                                placeholder="здесь пишем текст, который должен быть под заголовком"></textarea>
+                            <p class="form__description">Ниже напишите те цвета, которые хотите добавить в дресс-код</p>
+                            <textarea class="form__textarea" name="цвета дресс-кода" cols="30" rows="10"
+                                placeholder="здесь перечисляем цвета"></textarea>
+                        </div>
+                        <div class="img-box">
+                            <h3 class="form__subtitle">Пример блока 'Дресс-код'</h3>
+                            <img class="img" src="img/дресскод.jpg" alt="здесь фото пример шапки сайта">
+                        </div>
+                    </section>
+                    <!-- Блок детали -->
+                    <section class="details">
+                        <h3 class="form__subtitle">Блок "Детали"</h3>
+                        <p class="form__description">Отметьте ниже нужен ли вам данный блок на сайте</p>
+                        <label class="form__description">
+                            <input class="form__redio details_block_needed" name="Блок детали" value="нужен" id="нужен"
+                                type="radio">
+                            нужен
+                        </label>
+                        <label class="form__description">
+                            <input class="form__redio details_block_not_needed" name="Блок детали" value="не нужен"
+                                id="не нужен" type="radio">
+                            не нужен
+                        </label>
+                        <!-- Опросник блока детали -->
+                        <div class="form__details-block">
+                            <h3 class="form__subtitle">Что будем писать в заголовке данного блока? </h3>
+                            <p class="form__description form__description_curcive">Например (детали/
+                                особенности и т.д)</p>
+                            <input class="form__input-text" type="text" name="Загодовок блока детали"
+                                placeholder="Напишите сюда заголовок">
+                            <h3 class="form__subtitle">Что будем писать под заголовком данного блока?</h3>
+                            <p class="form__description form__description_curcive">Например: "Мы хотим,
+                                чтобы вы сполна насладились праздником, поэтому церемония и свадебный банкет
+                                предполагает участие только взрослых"</p>
+                            <p class="form__description">Другими словами, в данном блоке мы можем намекнуть
+                                гостям, чтобы они обратили внимания на какие то особенности. Например свадьба не
+                                предполагает детей или свадьба будет без алкоголя и т.п</p>
+                            <textarea class="form__textarea" name="Описание заголовка детали" cols="30" rows="10"
+                                placeholder="здесь пишем текст, который должен быть под заголовком"></textarea>
+                        </div>
+                        <div class="img-box">
+                            <h3 class="form__subtitle">Пример блока 'Детали'</h3>
+                            <img class="img" src="img/детали.jpg" alt="здесь фото пример шапки сайта">
+                        </div>
+                    </section>
+                    <!-- Блок пожелания -->
+                    <section class="wishes">
+                        <h3 class="form__subtitle">Блок "Пожелания"</h3>
+                        <p class="form__description">Отметьте ниже нужен ли вам данный блок на сайте</p>
+                        <label class="form__description">
+                            <input class="form__redio wishes_block_needed" name="Блок пожелания" value="нужен"
+                                id="нужен" type="radio">
+                            нужен
+                        </label>
+                        <label class="form__description">
+                            <input class="form__redio wishes_block_not_needed" name="Блок пожелания" value="не нужен"
+                                id="не нужен" type="radio">
+                            не нужен
+                        </label>
+                        <!-- Опросник блока пожелания -->
+                        <div class="form__wishes-block">
+                            <h3 class="form__subtitle">Что будем писать в заголовке данного блока? </h3>
+                            <p class="form__description form__description_curcive">Например (пожелания/
+                                просьба от невесты / жениха)</p>
+                            <input class="form__input-text" type="text" name="Заголовок блока пожелания"
+                                placeholder="Напишите сюда заголовок">
+                            <h3 class="form__subtitle">Что будем писать под заголовком данного блока?</h3>
+                            <p class="form__description form__description_curciv">Например: "Мы не хотим
+                                обременять вас выбором подарка, поэтому будем очень рады вашему вкладу в наш семейный
+                                бюджет".</p>
+                            <p class="form__description ">В этом блоке мы можем написать какие то пожелания к гостям: не
+                                дарить цветы,
+                                приехать заранее и т.п</p>
+                            <textarea class="form__textarea" name="Описание заголовка пожелания" cols="30" rows="10"
+                                placeholder="здесь пишем текст, который должен быть под заголовком"></textarea>
+                        </div>
+                        <div class="img-box">
+                            <h3 class="form__subtitle">Пример блока 'Пожелания'</h3>
+                            <img class="img" src="img/пожелания.jpg" alt="здесь фото пример шапки сайта">
+                        </div>
+                    </section>
+                    <!-- Блок организатор -->
+                    <section class="organizator">
+                        <h3 class="form__subtitle">Блок "Организатор"</h3>
+                        <p class="form__description">Если на вашей свадьбе есть организатор, то можно вставить данный
+                            блок на сайт с его/ее контактами</p>
+                        <p class="form__description">Отметьте ниже нужен ли вам данный блок на сайте</p>
+                        <label class="form__description">
+                            <input class="form__redio organizator_block_needed" name="Блок организатор" value="нужен"
+                                id="нужен" type="radio">
+                            нужен
+                        </label>
+                        <label class="form__description">
+                            <input class="form__redio organizator_block_not_needed" name="Блок организатор"
+                                value="не нужен" id="не нужен" type="radio">
+                            не нужен
+                        </label>
+                        <!-- Опросник блока организатор -->
+                        <div class="form__organizator-block">
+                            <h3 class="form__subtitle">Что будем писать в заголовке данного блока? </h3>
+                            <p class="form__description form__description_curcive">Например
+                                (организатор/ event-produser)</p>
+                            <input class="form__input-text" type="text" name="Заголовок блока организатор"
+                                placeholder="Напишите сюда заголовок">
+                            <h3 class="form__subtitle">Что будем писать под заголовком данного блока?</h3>
+                            <p class="form__description form__description_curcive">Например: "По всем
+                                вопросам организации свадьбы, можно обратиться к нашему огранизатору"</p>
+                            <p class="form__description"> Имя организатора</p>
+                            <input class="form__input-text" type="text" name="имя организатора"
+                                placeholder="Имя организатора">
+                            <p class="form__description"> Контакты организатора</p>
+                            <input class="form__input-text" type="text" name="Контакты организатора"
+                                placeholder="Контакты организатора">
+                        </div>
+                        <div class="img-box">
+                            <h3 class="form__subtitle">Пример блока 'Организатор'</h3>
+                            <img class="img" src="img/организатор.jpg" alt="здесь фото пример шапки сайта">
+                        </div>
+                    </section>
+                    <!-- Блок фото-формы -->
+                    <section class="photo-form">
+                        <h3 class="form__subtitle">Блок для заголовка опросника</h3>
+                        <p class="form__description">Данный блок находится над формой (опросником) и нужен для
+                            того,чтобы поросить гостей заполнить форму (опросник) до указанной даты. Также в этот блок
+                            обычно вставляем фотографию для эстетической связки контента</p>
+                        <p class="form__description">Отметьте ниже нужен ли вам данный блок на сайте</p>
+                        <label class="form__description">
+                            <input class="form__redio photo-form_block_needed" name="Блок с фото над опросником"
+                                value="нужен" id="нужен" type="radio">
+                            нужен
+                        </label>
+                        <label class="form__description">
+                            <input class="form__redio photo-form_block_not_needed" name="Блок с фото над опросником"
+                                value="не нужен" id="не нужен" type="radio">
+                            не нужен
+                        </label>
+                        <!-- Опросник блока фото формы -->
+                        <div class="form__photo-form-block">
+                            <h3 class="form__subtitle">До какой даты просить гостей заполнить и отправить вам опросник?
+                            </h3>
+                            <input class="form__input-text" type="text" name="Дата, до которой нужно заполнить опросник"
+                                placeholder="Напишите здесь дату">
+                            <p class="form__description"> Будем ли вставлять фото над опросником?</p>
+                            <label class="form__description">
+                                <input class="form__redio" name="Нужно ли вставлять фото над опросником" value="да"
+                                    id="да" type="radio">
+                                да
+                            </label>
+                            <label class="form__description">
+                                <input class="form__redio" name="Нужно ли вставлять фото над опросником" value="нет"
+                                    id="нет" type="radio">
+                                нет
+                            </label>
+                        </div>
+                        <div class="img-box">
+                            <h3 class="form__subtitle">Пример блока 'Организатор'</h3>
+                            <img class="img" src="img/фото-блок-форма.jpg" alt="здесь фото пример шапки сайта">
+                        </div>
+                    </section>
+
+                    <!-- Блок формы -->
+                    <section class="wedding-form">
+                        <h3 class="form__subtitle">Блок "Формы (опросник)"</h3>
+                        <p class="form__description">Отметьте ниже нужен ли вам данный блок на сайте</p>
+                        <label class="form__description">
+                            <input class="form__redio wedding-form_block_needed" name="Блок формы для гостей"
+                                value="нужен" id="нужен" type="radio">
+                            нужен
+                        </label>
+                        <label class="form__description">
+                            <input class="form__redio wedding-form_block_not_needed" name="Блок формы для гостей"
+                                value="не нужен" id="не нужен" type="radio">
+                            не нужен
+                        </label>
+                        <!-- Опросник блока формы -->
+                        <div class="form__wedding-form-block">
+                            <p class="form__description">В текстовом поле ниже вы прописываете вопросы, которые хотите
+                                узнать у гостей. Если вопрос подразумевает ответы, то пропишите варианты ответов.
+                            </p>
+                            <ol>
+                                <p class="form__description form__description_curcive">Например:</p>
+                                <li class="form__description form__description_curcive">Имя и фамилия</li>
+                                <li class="form__description form__description_curcive">Какие напитки вы предпочитаете:
+                                    вино, шампанское, виски</li>
+                                <li class="form__description form__description_curcive">Ваши пожелания</li>
+                                <li class="form__description form__description_curcive">Нужен ли обратный трансфер: да,
+                                    нет, затрудняюсь ответить</li>
+                                <li class="form__description form__description_curcive">и т.п</li>
+                            </ol>
+                            <textarea class="form__textarea" name="Описание заголовка формы" cols="30" rows="10"
+                                placeholder="здесь пишем те вопросы, которые хотим узнать у гостей в опроснике"></textarea>
+                        </div>
+                        <div class="img-box">
+                            <h3 class="form__subtitle">Пример опросника</h3>
+                            <img class="img" src="img/форма.jpg" alt="здесь фото пример шапки сайта">
+                        </div>
+                    </section>
+
+
+                    <!-- Дополнительные блоки -->
+                    <h1 class="form__title">Дополнительные блоки</h1>
+                    <h3 class="form__subtitle form__subtitle_more-blocks">Если вы хотите, чтобы мы добавили какие-либо
+                        дополнительные блоки на
+                        сайт, то можете сделать это ниже, нажав кнопку "Добавить блок"</h3>
+
+                    <button class="form__add-block button-add">Добавить блок</button>
+                    <button class="button-add button-submit" type="submit">Отправить</button>
+                    <button class="button-add button-reset" type="reset">Очистить форму</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script defer src="main.js"></script>
+</body>
+
+</html>

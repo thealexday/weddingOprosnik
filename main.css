@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    padding: 0 5px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__title {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    font-family: "Advent Pro", sans-serif;
+    margin: 1rem;
+}
+
+.form__subtitle {
+    text-align: left;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    font-family: "Advent Pro", sans-serif;
+    margin: 1rem;
+    width: 50%;
+}
+
+.form__subtitle_weight {
+    font-weight: 400;
+}
+
+.form__subtitle_more-blocks {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.form__description {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Advent Pro", sans-serif;
+    margin: 1rem;
+    display: block;
+    width: 50%;
+}
+
+.form__list {
+    color: rgb(39, 38, 38);
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 1rem;
+}
+
+.form__friends-block,
+.form__timing-block,
+.form__location-block,
+.form__dress-code-block,
+.form__details-block,
+.form__wishes-block,
+.form__organizator-block,
+.form__wedding-form-block,
+.form__photo-block,
+.form__photo-form-block {
+    display: none;
+}
+
+.form__input-text {
+    display: block;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid black;
+    padding: 10px 7px;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.form__textarea {
+    display: block;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid black;
+    padding: 10px 7px;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.form__redio {
+    cursor: pointer;
+}
+
+.button-add {
+    cursor: pointer;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 50%;
+    padding: 7px 14px;
+    box-sizing: border-box;
+    margin: 15px auto;
+}
+
+.visible {
+    display: block;
+    margin-bottom: 40px;
+}
+
+.friends,
+.header,
+.timing,
+.location,
+.dress-code,
+.details,
+.wishes,
+.organizator,
+.wedding-form,
+.photo,
+.photo-form {
+    border: 1px solid black;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    background-color: rgb(244, 243, 243);
+    height: 100%;
+    margin-bottom: 1rem;
+}
+
+.img-box {
+    max-width: 60%;
+    height: auto;
+}
+
+.img {
+    max-width: 60%;
+    height: auto;
+    border-radius: 15px;
+    display: block;
+}
+
+
+.form__add-photo {
+    width: 100px;
+    height: 100px;
+    background-color: bisque;
+}
+
+.form__description_curcive {
+    font-family: "Advent Pro", sans-serif;
+    font-style: italic;
+    color: rgb(72, 72, 72);
+}
+
+.form__description_red {
+    font-family: "Advent Pro", sans-serif;
+    font-style: italic;
+    color: rgb(164, 0, 0);
+}
+
+@media (max-width: 767px) and (min-width: 499px) {
+    .form__description {
+        width: 70%;
+    }
+
+    .form__subtitle {
+        text-align: left;
+        color: rgb(0, 0, 0);
+        font-size: 24px;
+        font-family: "Advent Pro", sans-serif;
+        margin: 1rem;
+        width: 70%;
+    }
+
+    .form__input-text {
+        width: 70%;
+    }
+
+    .form__textarea {
+        width: 70%;
+    }
+
+    .img-box {
+        max-width: 80%;
+        height: auto;
+    }
+
+    .img {
+        max-width: 80%;
+        height: auto;
+        border-radius: 15px;
+        display: block;
+    }
+}
+
+@media(max-width: 498px) {
+    .form__title {
+        font-size: 30px;
+    }
+
+    .form__description {
+        font-size: 16px;
+        width: 90%;
+    }
+
+    .form__subtitle {
+        text-align: left;
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        font-family: "Advent Pro", sans-serif;
+        margin: 1rem;
+        width: 90%;
+    }
+
+    .form__input-text {
+        width: 90%;
+    }
+
+    .form__textarea {
+        width: 90%;
+    }
+
+    .img-box {
+        max-width: 90%;
+        height: auto;
+    }
+
+    .img {
+        max-width: 90%;
+        height: auto;
+        border-radius: 15px;
+        display: block;
+    }
+}
